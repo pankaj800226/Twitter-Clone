@@ -1,0 +1,118 @@
+.poatAnd_upload_section {
+  background-color: #111111;
+  margin: 10px;
+  border-radius: 5px;
+  margin-top: 7rem;
+  padding: 10px;
+  width: 55%;
+  margin: auto;
+  .profile_image {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      background-color: blueviolet;
+      cursor: pointer;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: white;
+    }
+
+    > img {
+      cursor: pointer;
+      width: 39px;
+      height: 39px;
+      border-radius: 50%;
+    }
+
+    > input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 20px;
+      border: 0;
+      outline: 0;
+      color: white;
+      background-color: #202020ef;
+      font-size: 15px;
+      font-weight: 450;
+      &:focus {
+        border: 1.7px solid blueviolet;
+      }
+    }
+
+    > input::placeholder {
+      color: white;
+      font-size: 1rem;
+      margin-left: -55px;
+      letter-spacing: 1.5px;
+    }
+
+ 
+  }
+
+  .social_media {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    label {
+      cursor: pointer;
+      background-color: blueviolet;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      transition: all 0.5s;
+      &:hover {
+        background-color: rgba(99, 20, 173, 0.963);
+      }
+    }
+  }
+
+  .upload_btn {
+    padding: 10px;
+    button {
+      background-color: blueviolet;
+      padding: 12px 20px;
+      border-radius: 10px;
+      outline: 0;
+      border: 0;
+      font-size: 14px;
+      color: white;
+      cursor: pointer;
+      transition: all 0.5s;
+      &:hover {
+        background-color: rgba(99, 20, 173, 0.963);
+      }
+    }
+
+    > a {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      color: black;
+      text-decoration: none;
+
+      > img {
+        width: 23%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .poatAnd_upload_section {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 255px) {
+  .poatAnd_upload_section {
+    flex-direction: column;
+  }
+}

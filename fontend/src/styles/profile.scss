@@ -1,0 +1,139 @@
+.profile_container {
+  width: 30%;
+  background-color: #222;
+  height: 70vh;
+  margin: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    background-color: crimson;
+  }
+  .prifile_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-top: 10px;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+  }
+  .profile_user_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    margin-top: 10px;
+    p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+  }
+}
+
+// all post
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  margin: 1rem;
+  gap: 10px;
+  .all_post {
+    margin-top: 1rem;
+    width: 100%;
+    background-color: #111;
+    padding: 10px;
+    transition: all 0.5s;
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    .user_auth {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      span {
+        color: whitesmoke;
+      }
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        color: white;
+        background-color: blueviolet;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+      }
+    }
+    .image {
+      img {
+        margin-top: 10px;
+        height: 40vh;
+        width: 100%;
+        cursor: pointer;
+        // object-fit: cover;
+      }
+    }
+    .post_title {
+      color: white;
+      font-size: 20px;
+    }
+
+    .button_section {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      margin-top: 10px;
+      svg {
+        color: white;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .profile_container {
+    width: 90%;
+  }
+
+  .profile {
+    grid-template-columns: 1fr;
+    margin: 0;
+    .all_post {
+      width: 90%;
+      .image {
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .profile_container {
+    .prifile_img {
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+    .profile_user_name {
+      h2 {
+        font-size: 15px;
+      }
+      p {
+        font-size: 1rem;
+        margin-top: 10px;
+      }
+    }
+  }
+}
